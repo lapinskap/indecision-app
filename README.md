@@ -13,7 +13,8 @@ React App created with Andrew Mead course. ToDo based application to store ideas
 
 
 ## General info
-"Indecision App - Put your life in the hands of a computer" - React ToDo app which stores your options in local storage. For this purpose application contains react Props and State (JSON). No real database provided.
+### "Indecision App - Put your life in the hands of a computer"
+React ToDo app which stores your options in local storage. For this purpose application contains react Props and State (JSON). No real database provided.
 
 I implemented SCSS for the first time here + it is my first RWD experience (I added another styles for mobile devices)
 The playground folder contains simple jsx and es6 scripts, mainly the methods that I've learned to build more complex applications.
