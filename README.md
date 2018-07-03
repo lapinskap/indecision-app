@@ -1,5 +1,5 @@
 # Indecision App 
-React App created with Andrew Mead course, features: SCSS and own webpack.config.js file
+React App created with Andrew Mead course. ToDo based application to store ideas in local storage.
 
 
 ## Table of contents
