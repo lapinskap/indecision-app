@@ -108,7 +108,7 @@ const OptionModal = (props) => (
 export default OptionModal; 
 ```
 
-I highly recommend also to look into the [playground folder](./src/playground/) - it shows which things I had to practice to understand the implementation thoroughly. There I used mainly documentation. There is a version of the application written in JSX.
+I highly recommend also to look into the [playground folder](./src/playground/) - it shows which things I had to practice to understand the implementation thoroughly. To do those exercises I was using mainly documentation. There is a version of the application written in JSX.
 
 
 
