@@ -1,5 +1,5 @@
 # Indecision App 
-React App created with Andrew Mead course, contains SCSS and own webpack.config.js file
+React App created with Andrew Mead course, features: SCSS and own webpack.config.js file
 
 
 ## Table of contents
@@ -59,17 +59,19 @@ $ npm run dev-server
 | [file path](./src/components/Header.js)     | 
 | :---------------------------------:|
 
-```javascript
-const Header = () => (
-    <header>
-        <h1>Expensify</h1>
-        <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard Page </NavLink>
-        <NavLink to="/create" activeClassName="is-active"> Create Expense</NavLink>
-        <NavLink to="/help"  activeClassName="is-active">Help Page</NavLink>
-    </header>
-    );
+```sass
+//for non-mobile devices
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
 
-export default Header;
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
 ```
 
 ![mobile](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/mobile.jpg)
