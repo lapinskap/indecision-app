@@ -23,12 +23,12 @@ I wrote my own webpack file configuration for the first time. It was necessary t
 
 ## Screenshots
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/add.jpg)
+![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/thumb.jpg)
 
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/stretch.jpg)
+![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/dog.jpg)
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/thumb.jpg)
+![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/wall.jpg)
 
 ## Technologies
 * JavaScript - Ecmascript 6
@@ -72,7 +72,7 @@ const Header = () => (
 export default Header;
 ```
 
-> With React’s stateless functional components, each component can be easily tested in isolation. No mocking, state manipulation, special libraries, or tricky test harnesses are needed.
+![mobile](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/mobile.jpg)
 
 ###### ![Reducer](https://redux.js.org/api-reference/combinereducers) example - catches log in and log out actions - contains Redux
 
