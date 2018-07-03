@@ -54,9 +54,9 @@ $ npm run dev-server
 
 ## Code Examples
 
-###### Simple Header component created with fat arrow function - contains React Router
+###### Another styles for mobile devices
 
-| [file path](./src/components/Header.js)     | 
+| [file path](./src/styles/components/)     | 
 | :---------------------------------:|
 
 ```sass
@@ -74,27 +74,36 @@ $ npm run dev-server
 }
 ```
 
+Application on the phone looks as follows:
+
 ![mobile](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/mobile.jpg)
 
-###### ![Reducer](https://redux.js.org/api-reference/combinereducers) example - catches log in and log out actions - contains Redux
+###### React Modal- small window which pushes up while clicking "What should I do" button
 
-| [file path](./src/reducers/auth.js)     | 
+| [file path](./src/components/OptionModal.js)     | 
 | :---------------------------------:|
 
 
 ```javascript
-export default (state = {}, action) => {
-  switch (action.type) {
-    case 'LOGIN':
-      return {
-        uid: action.uid
-      };
-    case 'LOGOUT':
-      return {};
-    default:
-      return state;
-  }
-};
+import React from 'react';
+import Modal from 'react-modal';
+
+const OptionModal = (props) => (
+     <Modal
+     isOpen = {!!props.selectedOption}
+     contentLabel="Selected Option"
+     onRequestClose={props.handleClearSelectedOption}
+     closeTimeoutMS={600}
+     className="modal"
+     >
+        <h3 className="modal__title">Selected option</h3> 
+        {props.selectedOption && <p className="modal__body">{props.selectedOption}</p>}
+        <button className="button" onClick={props.handleClearSelectedOption}>Okay, fine</button>
+     </Modal>
+ );
+
+
+export default OptionModal; 
 ```
 
 ## Features
