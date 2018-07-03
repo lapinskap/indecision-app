@@ -54,7 +54,8 @@ $ npm run dev-server
 
 ## Code Examples
 
-###### Another styles for mobile devices
+##### SCSS
+Another styles for mobile devices
 
 | [file path](./src/styles/components/)     | 
 | :---------------------------------:|
@@ -78,7 +79,8 @@ Application on the phone looks as follows:
 
 ![mobile](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-1/mobile.jpg)
 
-###### React Modal- small window which pushes up while clicking "What should I do" button
+##### React Modal
+small window which pushes up while clicking "What should I do" button
 
 | [file path](./src/components/OptionModal.js)     | 
 | :---------------------------------:|
@@ -108,13 +110,12 @@ export default OptionModal;
 
 ## Features
 
-* React Router
-* Redux
-* Firebase
-* Jest
-* Enzyme
-* SCSS
-* Ecmascript 6
+* SCSS (RWD)
+* Ecmascript 6 syntax
+* Webpack.config.js file
+* Stateless function components
+* Props and State
+* BEM naming convention
 
 ## Status
 Project is: _finished_
