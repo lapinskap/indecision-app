@@ -1,7 +1,7 @@
-# Indecision App 
+# Indecision App
 React App created with Andrew Mead course. ToDo based application to store ideas in local storage.
 
-Annotation: If the branch master sass does not work correctly - some package is missing. Everything works on branch test
+> Annotation: If the branch master sass does not work correctly - some package is missing. Everything works on branch test
 
 
 
