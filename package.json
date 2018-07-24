@@ -2,8 +2,6 @@
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
-  "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
@@ -28,5 +26,9 @@
     "validator": "8.0.0",
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
-  }
+  },
+  "author": "Paulina Lapinska",
+  "license": "ISC",
+  "description": "My first React app",
+  "repository": "git@github.com:lapinskap/indecision-app.git"
 }

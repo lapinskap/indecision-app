@@ -1,17 +1,17 @@
-var nameVar = 'Andrew';
-var nameVar = 'Mike';
+var nameVar = 'Patrycja';
+var nameVar = 'Alina';
 console.log('nameVar', nameVar);
 
 let nameLet = 'Jen';
 nameLet = 'Julie';
 console.log('nameLet', nameLet);
 
-const nameConst = 'Frank';
+const nameConst = 'KtosInny';
 console.log('nameConst', nameConst);
 
 // Block scoping
 
-const fullName = 'Jen Mead';
+const fullName = 'Paulina Lapinska';
 let firstName;
 
 if (fullName) {

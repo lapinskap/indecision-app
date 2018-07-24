@@ -1,38 +1,40 @@
 console.log('Simple JS app is running!');
-//Application version without react components - just JSX
+//using Arrays in JSX
+
+//zmienna app ma kilka wartosci, w przypadku 'var' byloby to niemozliwe
 const app = {
-  title: 'Indecision App',
-  subtitle: 'Put your life in the hands of a computer,',
-  subsubtitle:'and get your own list of anything!',
-  options: []
-};
+    title: 'Indecision App',
+    subtitle: 'Put your life in the hands of a computer,',
+    subsubtitle:'and get your own list of anything!',
+    options: []
+  };
 
 const onFormSubmit = (e) => {
   e.preventDefault();
+//If this method is called, the default action of the event will not be triggered
+console.log('form submitted!');
+const option = e.target.elements.option.value;
+//download value(name) from element 'option' in FormSubmit-it's target of an event
 
-  let option = e.target.elements.option.value;
-
-  if (option) {
+//if option exist; push: add new item to array; 
+if (option) {
     app.options.push(option);
     e.target.elements.option.value = '';
     render();
   }
 };
-const onRemoveAll = () => {
-  app.options = [];
-  render();
-};
-
-const onMakeDecision = () => {
-  const randomNum = Math.floor(Math.random()*app.options.length);
-  const option = app.options[randomNum];
-  console.log(randomNum);
-  alert(option);
-};
-
 
 const appRoot = document.getElementById('app');
 
+const onRemoveAll = () => {
+  app.options = [];
+  render();
+  //equal to new empty array = options removed + rerender
+};
+
+
+
+//render template with arrow function
 const render = () => {
   const template = (
     <div>
@@ -40,9 +42,8 @@ const render = () => {
       {app.subtitle && <p>{app.subtitle}</p>}
       {app.subsubtitle && <p>{app.subsubtitle}</p>}
       <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
-      <button disabled={app.options.length === 0} onClick={onMakeDecision}>What should I do?</button>
+      <p>{app.options.length}</p>
       <button onClick={onRemoveAll}>Remove All</button>
-    
       <ol>
         {
           app.options.map((option) => <li key={option}>{option}</li>)
@@ -50,19 +51,16 @@ const render = () => {
       </ol>
       <form onSubmit={onFormSubmit}>
         <input type="text" name="option" />
+    
         <button>Add Option</button>
       </form>
-
-      <ol>
-        {
-          app.options.sort().map((option) => <li key={option}>{option}</li>)
-        }
-      </ol>
     </div>
   );
 
   ReactDOM.render(template, appRoot);
 };
 
-
 render();
+
+//var fruits = ["Banana", "Orange", "Apple", "Mango"];
+//fruits.push("Kiwi");
